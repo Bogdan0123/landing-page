@@ -14,7 +14,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background: #a1c3ff;
+    background: #f8f2c0;
 }
 
 h1,
@@ -26,9 +26,14 @@ ul {
     list-style-type: none;
 }
 
+.navbar {
+    background: #956011;
+    color: white;
+    height: 60px;
+}
+
 .navbar .logo {
     font-family: ZenDots;
-    font-style: normal;
     font-size: x-large;
 }
 
@@ -40,7 +45,7 @@ ul {
 }
 
 .navbar a:hover {
-    color: #a1c3ff;
+    color: #cfc6b8;
 }
 
 .navbar .container {
@@ -58,12 +63,7 @@ ul {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 30px;
-}
-
-.navbar {
-    background: #3474e6;
-    color: white;
-    height: 60px;
+    align-items: space-between;
 }
 
 .navbar ul li {
@@ -83,4 +83,63 @@ h2 {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
+    display: flex;
+}
+
+header {
+    background-color: hsla(41, 100%, 50%, 0.251);
+    color: rgb(23, 23, 23);
+    min-height: 350px;
+    display: flex;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 400px;
+    border-radius: 27px;
+    box-shadow: rgb(26, 26, 26) 7px 5px;
+    justify-content: flex-end;
+ }
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-card {
+    display: flex;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.6);
+    padding: 20px;
+    max-height: 280px;
+    max-width: 200px;
+    background-color: #956011;
+    color: rgb(240, 240, 240);
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+.info-content {
+    padding: 7px;
+    color: rgb(255, 255, 255);
 }
