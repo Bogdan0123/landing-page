@@ -17,6 +17,10 @@ body {
     background: #f8f2c0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1,
 h2 {
     margin-bottom: 15px;
@@ -60,10 +64,10 @@ ul {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
-    align-items: space-between;
+    display: flex;
 }
 
 .navbar ul li {
@@ -103,15 +107,8 @@ h2 {
     border-right: none;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
-    display: flex;
-}
-
 header {
-    background-color: hsla(41, 100%, 50%, 0.251);
+    background-color: #ffae0040;
     color: rgb(23, 23, 23);
     min-height: 350px;
     display: flex;
@@ -140,6 +137,7 @@ header {
 .info-container {
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 
 .info-card {
@@ -169,7 +167,7 @@ header {
 }
 
 .story {
-    height: 400px;
+    height: 320px;
     background-color: #efcf9589;
     display: flex;
     align-items: center;
@@ -177,8 +175,8 @@ header {
 }
 
 .story-box {
-    height: 200px;
-    width: 900px;
+    height: 215px;
+    width: 100%;
     background-color: #fffacbb7;
     display: flex;
     align-items: center;
@@ -186,10 +184,73 @@ header {
 }
 
 .story-info {
-    height: 200px;
+    height: 178px;
     width: 500px;
+    padding: 5px;
+    background-color: #faeec9;
+    border-radius: 5px;
+    border: #f6d881 1px solid;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
 }
 
 .tab {
     text-align: right;
 } 
+
+.address {
+    height: 200px;
+    background-color: #ffae0040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-container{
+    height: 170px;
+    width: 500px;
+    background: rgba(239, 255, 0, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(238, 255, 0, 0.359);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.info h3 {
+    font-size: 17px;
+}
+
+.google-maps-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    height: 32px;
+    width: 98px;
+    color:rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: rgb(38, 92, 103);
+    border: rgb(15, 61, 72) solid 3px;
+    border-left: none;
+    border-top: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.google-maps-btn:hover {
+    color: rgb(228, 228, 228);
+    background-color: rgb(30, 122, 140);
+    border-bottom: none;
+    border-right: none;
+}
