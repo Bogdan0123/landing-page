@@ -74,10 +74,6 @@ ul {
     margin-left: 20px;
 }
 
-img {
-    max-width: 100%;
-}
-
 h1,
 h2 {
     margin-bottom: 15px;
@@ -123,9 +119,9 @@ header {
 .header img {
     max-width: 400px;
     border-radius: 27px;
-    box-shadow: rgb(26, 26, 26) 7px 5px;
-    justify-content: flex-end;
- }
+    box-shadow: rgb(4, 52, 37) 7px 5px;
+    justify-content: flex-end; 
+}
 
 .header .container {
     display: flex;
@@ -150,6 +146,7 @@ header {
     max-width: 200px;
     background-color: #954f11;
     color: rgb(240, 240, 240);
+    border: rgba(255, 174, 0, 0.268) solid;
 }
 
 .info-box{
@@ -166,7 +163,7 @@ header {
     color: rgb(255, 255, 255);
 }
 
-.story {
+.story-section {
     height: 320px;
     background-color: #efcf9589;
     display: flex;
@@ -188,16 +185,12 @@ header {
     width: 500px;
     padding: 5px;
     background-color: #faeec9;
-    border-radius: 5px;
+    border-radius: 3px;
     border: #f6d881 1px solid;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
 }
-
-.tab {
-    text-align: right;
-} 
 
 .address {
     height: 200px;
@@ -253,4 +246,72 @@ header {
     background-color: rgb(30, 122, 140);
     border-bottom: none;
     border-right: none;
+}
+
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .to-shop-btn {
+        margin: 10px auto 0 auto;
+    }
+    .header img {
+        max-width: 325px;
+        max-height: 300px;
+        border-radius: 20px;
+        box-shadow: rgb(4, 52, 37) 7px 5px;
+        margin-bottom: 20px;
+        margin-top: -5px;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .info-box {
+        width: 500px;
+        padding: auto;
+    }
+    .info-content {
+        padding: 0px;
+    }
+    .info-content h2 {
+        line-height: 1.7rem;
+    }
+    .info-content p {
+        line-height: 1.2rem;
+    }
+    .story-section {
+        height: 300px;
+    }
+    .story-box {
+        height: 257px;
+        width: 100%;
+        padding: 10px;
+    }
+    .story-info {
+        height: 178px;
+        width: 500px;
+        padding: 0px;
+    }
+    .story-info {
+        height: 240px;
+        width: 500px;
+        padding: 5px;
+    }
+    .address {
+        height: 250px;
+    }
+    .address-container{
+        height: 210px;
+        width: 330px;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
