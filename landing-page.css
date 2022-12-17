@@ -27,7 +27,7 @@ ul {
 }
 
 .navbar {
-    background: #956011;
+    background: #954f11;
     color: white;
     height: 60px;
 }
@@ -79,6 +79,24 @@ h2 {
     margin-bottom: 15px;
 }
 
+.to-shop-btn {
+    height: 30px;
+    width: 130px;
+    border-radius: 4px;
+    background-color: rgb(30, 122, 140);
+    color: #fff;
+    font-weight: bold;
+    border: rgb(91, 228, 255) solid 1px;
+    margin-top: 30px;
+}
+
+.to-shop-btn:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgb(38, 92, 103);
+    transition-duration: 0.3s;
+    border: rgb(15, 61, 72) solid 3px;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -126,7 +144,7 @@ header {
     padding: 20px;
     max-height: 280px;
     max-width: 200px;
-    background-color: #956011;
+    background-color: #954f11;
     color: rgb(240, 240, 240);
 }
 
