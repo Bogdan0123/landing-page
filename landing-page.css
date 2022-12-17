@@ -193,11 +193,12 @@ header {
 }
 
 .address {
-    height: 200px;
+    height: 250px;
     background-color: #ffae0040;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .address-container{
